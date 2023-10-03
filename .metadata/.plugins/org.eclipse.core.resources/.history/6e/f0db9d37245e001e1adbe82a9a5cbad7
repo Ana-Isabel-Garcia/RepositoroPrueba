@@ -1,0 +1,40 @@
+import static org.junit.Assert.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class EliminarTrabajadores {
+	private WebDriver driver;
+	
+	//campo correo
+	private By campoCorreo = By.xpath("//table[@class='header_table']/tbody/tr/td[5]");
+	
+
+	@Before
+	public void setUp() throws Exception {
+		System.setProperty("webdriver.msedgedriver.driver", "./src/test/resources/chromedriver/msedgedriver.exe ");
+		driver = new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://localhost/colegio/Proyect-Master/view/login/Login.html");
+		
+		driver.findElement(By.id("usuario")).sendKeys("admin@gmail.com");
+		driver.findElement(By.id("password")).sendKeys("Leo1234@");
+		driver.findElement(By.xpath("//div[@class='boton']/input")).click();
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,34 @@
+import static org.junit.Assert.*;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class EliminarTrabajadores {
+	private WebDriver driver;
+	
+
+	@Before
+	public void setUp() throws Exception {
+		System.setProperty("webdriver.msedgedriver.driver", "./src/test/resources/chromedriver/msedgedriver.exe ");
+		driver = new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://localhost/colegio/Proyect-Master/view/login/Login.html");
+
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
