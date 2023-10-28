@@ -1,0 +1,24 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import AccesoDatos.ReadFile;
+import AccesoDatos.WriteFile;
+
+public class RegPersonal {
+	private WebDriver driver;
+	private WriteFile write;
+	private ReadFile read;
+	String ruta = "C:\\xampp\\htdocs\\colegio\\PruebasColegio\\DataFlows\\Estres\\RegPersonal.Xlsx";
+	
+	//localizadores
+	
+	//seccion de datos personales
+	By cajaNombre = By.id("nomPerso");
+	By cajaPaterno = By.id("apePPerso");
+	By cajaMaterno = By.id("apeMPerso");
+	By cajaNacimiento = By.id("fechaNacPerso");
+	By cajaTelFijo = By.id("telFPerso");
+	By cajaTelMovil = By.id("telMPerso");
+	By cajaCorreo = By.id("telFPerso");
+	
+}

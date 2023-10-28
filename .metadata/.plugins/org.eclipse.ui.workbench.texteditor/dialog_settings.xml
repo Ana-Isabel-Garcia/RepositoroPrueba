@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="admin@gmail.com"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="&lt;name&gt;"/>
 			<item value="admin@gmail.com"/>
 		</list>
 		<list key="replacehistory">

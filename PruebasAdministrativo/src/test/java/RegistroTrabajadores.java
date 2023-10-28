@@ -36,7 +36,7 @@ public class RegistroTrabajadores {
 		System.setProperty("webdriver.msedgedriver.driver", "./src/test/resources/chromedriver/msedgedriver.exe ");
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://localhost/colegio/Proyect-Master/view/login/Login.html");
+		driver.get("https://marcg.com.mx/Sistema_CISCIG/view/login/Login.html");
 
 		read = new ReadFile();
 		write = new WriteFile();
@@ -50,7 +50,7 @@ public class RegistroTrabajadores {
 	@After
 	public void tearDown() throws Exception {
 		System.out.println("Prueba terminada");
-		driver.quit();
+		driver.close();
 
 	}
 

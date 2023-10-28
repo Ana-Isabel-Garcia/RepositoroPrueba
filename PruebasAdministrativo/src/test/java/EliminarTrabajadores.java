@@ -23,7 +23,7 @@ public class EliminarTrabajadores {
 		System.setProperty("webdriver.msedgedriver.driver", "./src/test/resources/chromedriver/msedgedriver.exe ");
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://localhost/colegio/Proyect-Master/view/login/Login.html");
+		driver.get("https://marcg.com.mx/Sistema_CISCIG/view/login/Login.html");
 
 		driver.findElement(By.id("usuario")).sendKeys("admin@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("Leo1234@");
@@ -32,6 +32,7 @@ public class EliminarTrabajadores {
 
 	@After
 	public void tearDown() throws Exception {
+		System.out.println("Prueba terminada");
 		driver.quit();
 	}
 
@@ -65,7 +66,7 @@ public class EliminarTrabajadores {
 				String textoCorreo = correo.getText();
 				System.out.println(textoCorreo);
 				
-				if(!textoCorreo.equals("admin@gmail.com") && !textoCorreo.equals("user@gmail.com")) {
+				if(!textoCorreo.equals("admin@gmail.com") && !textoCorreo.equals("user@gmail.com") && !textoCorreo.equals("nayer9810@gmail.com")) {
 					linkEliminar.click();
 					
 					//cerrar el confirm

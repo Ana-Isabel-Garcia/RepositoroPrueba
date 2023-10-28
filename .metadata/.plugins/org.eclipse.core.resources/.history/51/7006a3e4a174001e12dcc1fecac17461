@@ -1,0 +1,58 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import AccesoDatos.ReadFile;
+import AccesoDatos.WriteFile;
+
+public class RegPersonal {
+	private WebDriver driver;
+	private WriteFile write;
+	private ReadFile read;
+	String ruta = "C:\\xampp\\htdocs\\colegio\\PruebasColegio\\DataFlows\\Estres\\RegPersonal.Xlsx";
+	
+	//localizadores
+	
+	//seccion de datos personales
+	By cajaNombre = By.id("nomPerso");
+	By cajaPaterno = By.id("apePPerso");
+	By cajaMaterno = By.id("apeMPerso");
+	By cajaNacimiento = By.id("fechaNacPerso");
+	By cajaTelFijo = By.id("telFPerso");
+	By cajaTelMovil = By.id("telMPerso");
+	By cajaCorreo = By.id("correoPerso");
+	By cajaContra = By.id("contraPerso");
+	By cajaConfirm = By.id("confiContraPerso");
+	By checkCedula = By.id("ceduPerso1");
+	By cajaCedula = By.id("cedulaPerso");
+	
+	//seccion de direccion
+	By cajaCodigo = By.id("cpPerso");
+	By cajaCalle = By.id("callePerso");
+	By cajaColonia = By.id("coloniaPerso");
+	
+	//seccion educacion
+	By cajaGrado = By.id("tipoGradoPerso");
+	By checkPasantia = By.id("pasantia1");
+	
+	//seccion certificacion
+	By checkCeftificacion = By.id("checkboxcertificacionoculto");
+	By cajaNombreCert = By.id("nomCert");
+	By cajaOrgCert = By.id("orgCert");
+	By cajaEmision = By.id("fechaICert");
+	By cajaVigencia = By.id("fechaFCert");
+	
+	//seccion datos laborales
+	By checkLaborales = By.id("checkboxlaboral");
+	By cajaEmpresa = By.id("nomEmpPerso");
+	By cajaPuesto = By.id("puestoEmpPerso");
+	By cajaCorreoL = By.id("correoEmpPerso");
+	By cajaTelEmp = By.id("telFEmpPerso");
+	By cajaExtension = By.id("ExtTelFEmp");
+	By cajaFuncion = By.id("funcionEmpPerso");
+	
+	//seccion final
+	By checkDelitos = By.id("antecedente2");
+	By checkVeridico = By.id("antecedente2");	
+	
+	
+}
